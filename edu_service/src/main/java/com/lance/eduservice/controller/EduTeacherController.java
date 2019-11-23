@@ -1,6 +1,6 @@
 package com.lance.eduservice.controller;
 
-
+import com.lance.common.R;
 import com.lance.eduservice.entity.EduTeacher;
 import com.lance.eduservice.service.EduTeacherService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,10 +23,9 @@ public class EduTeacherController {
     private EduTeacherService eduTeacherService;
 
     @GetMapping
-    public List<EduTeacher> getAllTeacherList() {
-        System.out.println("-------执行到了这里------");
+    public R getAllTeacherList() {
         List<EduTeacher> list = eduTeacherService.list(null);
-        return list;
+        return R.ok().data("items",list);
     }
 
     @DeleteMapping("{id}")

@@ -25,6 +25,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="lernado_common" />
     <orderEntry type="library" name="Maven: com.baomidou:mybatis-plus-boot-starter:3.0.5" level="project" />
     <orderEntry type="library" name="Maven: com.baomidou:mybatis-plus:3.0.5" level="project" />
     <orderEntry type="library" name="Maven: com.baomidou:mybatis-plus-extension:3.0.5" level="project" />
