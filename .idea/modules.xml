@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Lernado.iml" filepath="$PROJECT_DIR$/Lernado.iml" />
+      <module fileurl="file://$PROJECT_DIR$/edu_service/edu_service.iml" filepath="$PROJECT_DIR$/edu_service/edu_service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lernado_common/lernado_common.iml" filepath="$PROJECT_DIR$/lernado_common/lernado_common.iml" />
+    </modules>
+  </component>
+</project>
