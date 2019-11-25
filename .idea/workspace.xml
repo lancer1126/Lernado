@@ -2,23 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c4bed01b-08fa-4dec-a7d0-3b9d03b1dadf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/edu_service/src/main/java/com/lance/eduservice/entity/query/QueryTeacher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/edu_service/src/main/java/com/lance/eduservice/handler/GlobalExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/edu_service/src/main/java/com/lance/eduservice/handler/MyObjectMetaHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/edu_service/target/classes/com/lance/eduservice/entity/query/QueryTeacher.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/edu_service/target/classes/com/lance/eduservice/handler/MyObjectMetaHandler.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/edu_service/src/main/java/com/lance/eduservice/config/EduServiceConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/edu_service/src/main/java/com/lance/eduservice/config/EduServiceConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/edu_service/src/main/java/com/lance/eduservice/controller/EduTeacherController.java" beforeDir="false" afterPath="$PROJECT_DIR$/edu_service/src/main/java/com/lance/eduservice/controller/EduTeacherController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/edu_service/src/main/java/com/lance/eduservice/entity/EduTeacher.java" beforeDir="false" afterPath="$PROJECT_DIR$/edu_service/src/main/java/com/lance/eduservice/entity/EduTeacher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/edu_service/src/main/java/com/lance/eduservice/service/EduTeacherService.java" beforeDir="false" afterPath="$PROJECT_DIR$/edu_service/src/main/java/com/lance/eduservice/service/EduTeacherService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/edu_service/src/main/java/com/lance/eduservice/service/impl/EduTeacherServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/edu_service/src/main/java/com/lance/eduservice/service/impl/EduTeacherServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/edu_service/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/edu_service/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/edu_service/target/classes/com/lance/eduservice/config/EduServiceConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/edu_service/target/classes/com/lance/eduservice/config/EduServiceConfig.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/edu_service/target/classes/com/lance/eduservice/controller/EduTeacherController.class" beforeDir="false" afterPath="$PROJECT_DIR$/edu_service/target/classes/com/lance/eduservice/controller/EduTeacherController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/edu_service/target/classes/com/lance/eduservice/entity/EduTeacher.class" beforeDir="false" afterPath="$PROJECT_DIR$/edu_service/target/classes/com/lance/eduservice/entity/EduTeacher.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/edu_service/target/classes/com/lance/eduservice/service/EduTeacherService.class" beforeDir="false" afterPath="$PROJECT_DIR$/edu_service/target/classes/com/lance/eduservice/service/EduTeacherService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/edu_service/target/classes/com/lance/eduservice/service/impl/EduTeacherServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/edu_service/target/classes/com/lance/eduservice/service/impl/EduTeacherServiceImpl.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -164,7 +150,9 @@
       <workItem from="1574522858196" duration="603000" />
       <workItem from="1574523485129" duration="273000" />
       <workItem from="1574554305923" duration="401000" />
-      <workItem from="1574554992434" duration="13209000" />
+      <workItem from="1574554992434" duration="13486000" />
+      <workItem from="1574581415515" duration="598000" />
+      <workItem from="1574671371147" duration="9163000" />
     </task>
     <task id="LOCAL-00001" summary="增加了讲师管理模块">
       <created>1574521249529</created>
@@ -180,7 +168,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574523739731</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="优化讲师模块">
+      <created>1574579663691</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1574579663691</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -202,6 +197,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="增加了讲师管理模块" />
     <MESSAGE value="增加common结构" />
-    <option name="LAST_COMMIT_MESSAGE" value="增加common结构" />
+    <MESSAGE value="优化讲师模块" />
+    <option name="LAST_COMMIT_MESSAGE" value="优化讲师模块" />
   </component>
 </project>

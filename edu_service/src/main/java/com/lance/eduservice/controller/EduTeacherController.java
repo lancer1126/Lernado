@@ -20,10 +20,21 @@ import java.util.List;
  */
 @RestController
 @RequestMapping("/eduservice/teacher")
+@CrossOrigin
 public class EduTeacherController
 {
     @Autowired
     private EduTeacherService eduTeacherService;
+
+    @PostMapping("login")
+    public R login()
+    { return R.ok().data("token","admin"); }
+
+    @GetMapping("info")
+    public R info() {
+        return R.ok().data("roles","[admin]").data("name","admin")
+                .data("avatar","https://wpimg.wallstcn.com/f778738c-e4f8-4870-b634-56703b4acafe.gif");
+    }
 
     // 1.获得所有的讲师列表
     @GetMapping
@@ -50,13 +61,16 @@ public class EduTeacherController
     }
 
     // 3.多条件组合查询
-    @GetMapping("multiConditionPageList/{page}/{limit}")
-    public R getMultiConditionPageList(@PathVariable Long page, @PathVariable Long limit, QueryTeacher queryTeacher)
+    @PostMapping("multiConditionPageList/{page}/{limit}")
+    public R getMultiConditionPageList(@PathVariable Long page, @PathVariable Long limit,
+                                       @RequestBody QueryTeacher queryTeacher)
     {
         Page<EduTeacher> pageTeacher = new Page<>(page,limit);
 
         eduTeacherService.pageListCondition(pageTeacher,queryTeacher);
-        return null;
+        long total = pageTeacher.getTotal();
+        List<EduTeacher> records = pageTeacher.getRecords();
+        return R.ok().data("total",total).data("items",records);
     }
 
     // 4.添加讲师的方法
