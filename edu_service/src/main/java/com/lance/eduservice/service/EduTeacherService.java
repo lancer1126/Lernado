@@ -16,4 +16,6 @@ import com.lance.eduservice.entity.query.QueryTeacher;
 public interface EduTeacherService extends IService<EduTeacher>
 {
     void pageListCondition(Page<EduTeacher> pageTeacher, QueryTeacher queryTeacher);
+    boolean deleteTeacherById(String id);
+
 }

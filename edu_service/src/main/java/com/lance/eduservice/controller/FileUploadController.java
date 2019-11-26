@@ -10,6 +10,7 @@ import org.springframework.web.multipart.MultipartFile;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.UUID;
 
 // 用作上传文件到阿里云OSS
 @RestController
@@ -20,14 +21,16 @@ public class FileUploadController
     @PostMapping("/upload")
     public R uploadTeacherImg(@RequestParam("file") MultipartFile file) throws IOException
     {
-        String endpoint = "oss-cn-hangzhou.aliyuncs.com";
+        String endpoint = "http://oss-cn-hangzhou.aliyuncs.com";
         String accessKeyId = "LTAI4FrAhXnANcNsQyjs4fz8";
         String accessKeySecret = "tJybPmIsuM8oTNZ2mdNvPNJx2ABKCx";
-        String bucketName = "lernado-file";
+        String bucketName = "lernado";
 
         // 获取上传的文件名称和输入流
         String filename = file.getOriginalFilename();
         InputStream inputStream = file.getInputStream();
+        String uuid = UUID.randomUUID().toString();
+        filename = uuid + filename;
 
         // 创建OSSclient实例
         OSS ossClient = new OSSClientBuilder().build(endpoint,accessKeyId,accessKeySecret);
