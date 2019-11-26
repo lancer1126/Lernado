@@ -20,6 +20,7 @@ import java.util.List;
  */
 @RestController
 @RequestMapping("/eduservice/teacher")
+// 解决跨域问题
 @CrossOrigin
 public class EduTeacherController
 {
@@ -103,9 +104,15 @@ public class EduTeacherController
             return R.error();
     }
 
+    // 7.根据id删除讲师（逻辑删除，并非真正的删除）
     @DeleteMapping("{id}")
-    public boolean deleteTeacherById(@PathVariable("id") String id) {
-        return eduTeacherService.removeById(id);
+    public R deleteTeacherById(@PathVariable String id)
+    {
+        boolean flag = eduTeacherService.removeById(id);
+        if (flag)
+            return R.ok();
+        else
+            return R.error();
     }
 }
 

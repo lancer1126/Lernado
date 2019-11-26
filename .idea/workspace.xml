@@ -3,8 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="c4bed01b-08fa-4dec-a7d0-3b9d03b1dadf" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VueSpace/lernado-admin-project/src/api/teacher.js" beforeDir="false" afterPath="$PROJECT_DIR$/VueSpace/lernado-admin-project/src/api/teacher.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VueSpace/lernado-admin-project/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/VueSpace/lernado-admin-project/src/router/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VueSpace/lernado-admin-project/src/views/edu/teacher/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/VueSpace/lernado-admin-project/src/views/edu/teacher/index.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/edu_service/src/main/java/com/lance/eduservice/controller/EduTeacherController.java" beforeDir="false" afterPath="$PROJECT_DIR$/edu_service/src/main/java/com/lance/eduservice/controller/EduTeacherController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/edu_service/src/main/java/com/lance/eduservice/entity/EduTeacher.java" beforeDir="false" afterPath="$PROJECT_DIR$/edu_service/src/main/java/com/lance/eduservice/entity/EduTeacher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/edu_service/src/main/java/com/lance/eduservice/handler/MyObjectMetaHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/edu_service/src/main/java/com/lance/eduservice/handler/MyObjectMetaHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/edu_service/target/classes/com/lance/eduservice/controller/EduTeacherController.class" beforeDir="false" afterPath="$PROJECT_DIR$/edu_service/target/classes/com/lance/eduservice/controller/EduTeacherController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/edu_service/target/classes/com/lance/eduservice/handler/MyObjectMetaHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/edu_service/target/classes/com/lance/eduservice/handler/MyObjectMetaHandler.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -75,6 +82,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/edu_service/src/test/java/com/lance/test" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -152,7 +160,8 @@
       <workItem from="1574554305923" duration="401000" />
       <workItem from="1574554992434" duration="13486000" />
       <workItem from="1574581415515" duration="598000" />
-      <workItem from="1574671371147" duration="9163000" />
+      <workItem from="1574671371147" duration="15322000" />
+      <workItem from="1574727290845" duration="3917000" />
     </task>
     <task id="LOCAL-00001" summary="增加了讲师管理模块">
       <created>1574521249529</created>
@@ -175,7 +184,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574579663691</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="优化讲师模块">
+      <created>1574687404678</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1574687404678</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

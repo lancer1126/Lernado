@@ -22,5 +22,5 @@
  | 框架 | 说明 |
  | --- | --- |
  | Vue | 前端框架 |
- | Element | 前端UI |
+ | Element-UI | 前端UI |
  | Echarts | 图表框架 |

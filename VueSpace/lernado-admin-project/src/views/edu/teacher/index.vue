@@ -130,6 +130,33 @@ export default {
                     console.log(response)
                 })
         },
+        resetData() {
+            // 清空搜索数据并显示全部数据
+            this.searchObj = {}
+            this.getListTeacher()
+        },
+        removeDataById(id) {
+            // 删除方法
+            this.$confirm('是否删除文件?', '提示', {
+                confirmButtonText: '确定',
+                cancelButtonText: '取消',
+                type: 'warning'
+            }).then(() => {
+                return teacher.deleteTeacherById(id)
+            }).then(() => {
+                // 重新刷新一下列表
+                this.getListTeacher()
+                this.$message({
+                    type: 'success',
+                    message: '删除成功!'
+                })
+            }).catch(() => {
+                this.$message({
+                    type: 'info',
+                    message: '删除已取消'
+                })
+            })
+        }
     }
 }
 </script>
