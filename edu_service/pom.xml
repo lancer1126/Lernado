@@ -51,6 +51,12 @@
             <artifactId>lombok</artifactId>
         </dependency>
 
+        <dependency>
+            <!--        阿里OSS管理的工具-->
+            <groupId>com.aliyun.oss</groupId>
+            <artifactId>aliyun-sdk-oss</artifactId>
+            <version>3.8.0</version>
+        </dependency>
         <!--开发者工具-->
         <dependency>
             <groupId>org.springframework.boot</groupId>

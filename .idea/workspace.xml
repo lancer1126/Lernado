@@ -1,11 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c4bed01b-08fa-4dec-a7d0-3b9d03b1dadf" name="Default Changelist" comment="">
+    <list default="true" id="c4bed01b-08fa-4dec-a7d0-3b9d03b1dadf" name="Default Changelist" comment="优化讲师模块">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_aliyun_aliyun_java_sdk_core_3_4_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_aliyun_aliyun_java_sdk_ecs_4_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_aliyun_aliyun_java_sdk_ram_3_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_aliyun_aliyun_java_sdk_sts_3_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_aliyun_oss_aliyun_sdk_oss_3_8_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_13.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_10.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jettison_jettison_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jdom_jdom_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__stax_stax_api_1_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/edu_service/src/main/java/com/lance/eduservice/controller/FileUploadController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/edu_service/target/classes/com/lance/eduservice/controller/FileUploadController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VueSpace/lernado-admin-project/src/api/teacher.js" beforeDir="false" afterPath="$PROJECT_DIR$/VueSpace/lernado-admin-project/src/api/teacher.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VueSpace/lernado-admin-project/src/views/edu/teacher/form.vue" beforeDir="false" afterPath="$PROJECT_DIR$/VueSpace/lernado-admin-project/src/views/edu/teacher/form.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VueSpace/lernado-admin-project/src/views/edu/teacher/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/VueSpace/lernado-admin-project/src/views/edu/teacher/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/edu_service/edu_service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/edu_service/edu_service.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/edu_service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/edu_service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/edu_service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/edu_service/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -155,7 +169,7 @@
       <workItem from="1574554992434" duration="13486000" />
       <workItem from="1574581415515" duration="598000" />
       <workItem from="1574671371147" duration="15322000" />
-      <workItem from="1574727290845" duration="8427000" />
+      <workItem from="1574727290845" duration="14435000" />
     </task>
     <task id="LOCAL-00001" summary="增加了讲师管理模块">
       <created>1574521249529</created>
