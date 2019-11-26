@@ -36,24 +36,52 @@
 <script>
 import teacher from '@/api/teacher'
 
+const defaultForm = {
+    name: '',
+    sort: 0,
+    level: '',
+    career: '',
+    intro: '',
+    avatar: ''
+}
+
 export default {
     data() {
         return {
             // 设置teacher对象的内容
-            teacher: {
-                name: '',
-                sort: 0,
-                level: '',
-                career: '',
-                intro: '',
-                avatar: ''
-            }
+            teacher: defaultForm
+        }
+    },
+    watch: {
+        $route(to,from) {
+            console.log('watch $route')
+            this.init()
         }
     },
     created() {
-
+        this.init()
     },
     methods: {
+        init() {
+            // 在页面加载之前,判断路由中是否有id值,
+            //有则为修改,调用方法根据id查询
+            //没有则为新增讲师
+            if(this.$route.params && this.$route.params.id) {
+                const id = this.$route.params.id
+                this.getTeacherById(id)
+            } else {
+                // 显示一个空表单
+                this.teacher = {...defaultForm}
+            }
+        },
+        saveOrUpdate() {
+            if(!this.teacher.id) {
+                this.saveTeacher()
+            } else {
+                this.updateTeacher()
+            }
+        },
+        // 添加讲师,从teacher的api中获取addTeacher方法来进行添加
         saveTeacher() {
             teacher.addTeacher(this.teacher)
                 .then(() => {
@@ -70,8 +98,30 @@ export default {
                     })
                 })
         },
-        saveOrUpdate() {
-            this.saveTeacher()
+        getTeacherById(id) {
+            // 从teacher的api中获取到该id所代表的讲师数据
+            teacher.getTeacherId(id)
+                .then(response => {
+                    this.teacher = response.data.eduTeacher
+                })
+        },
+        // 使用teacher的api的update方法修改讲师的资料
+        updateTeacher() {
+            teacher.updateTeacherId(this.teacher.id,this.teacher)
+                .then(() => {
+                    return this.$message({
+                        type: 'success',
+                        message: '修改成功'
+                    })
+                }).then(() => {
+                    // 路由跳转
+                    this.$router.push({path: '/teacher'})
+                }).catch(() =>{
+                    this.$message({
+                        type: 'error',
+                        message: '修改失败'
+                    })
+                })
         }
     }
 }
