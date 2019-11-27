@@ -24,7 +24,7 @@ public class FileUploadController
         String endpoint = "http://oss-cn-hangzhou.aliyuncs.com";
         String accessKeyId = "LTAI4FrAhXnANcNsQyjs4fz8";
         String accessKeySecret = "tJybPmIsuM8oTNZ2mdNvPNJx2ABKCx";
-        String bucketName = "lernado";
+        String bucketName = "lernado-file";
 
         // 获取上传的文件名称和输入流
         String filename = file.getOriginalFilename();

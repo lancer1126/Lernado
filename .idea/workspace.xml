@@ -2,16 +2,40 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c4bed01b-08fa-4dec-a7d0-3b9d03b1dadf" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_xml_bind_jaxb_core_2_3_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_xml_bind_jaxb_impl_2_3_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_fileupload_commons_fileupload_1_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__dom4j_dom4j_1_6_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_activation_1_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_bind_jaxb_api_2_3_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_3_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_ooxml_3_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_ooxml_schemas_3_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_xmlbeans_xmlbeans_2_3_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xml_apis_xml_apis_1_0_b2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VueSpace/lernado-admin-project/src/components/ImageCropper/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VueSpace/lernado-admin-project/src/components/ImageCropper/utils/data2blob.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VueSpace/lernado-admin-project/src/components/ImageCropper/utils/effectRipple.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VueSpace/lernado-admin-project/src/components/ImageCropper/utils/language.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VueSpace/lernado-admin-project/src/components/ImageCropper/utils/mimes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VueSpace/lernado-admin-project/src/components/PanThumb/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/edu_service/src/main/java/com/lance/eduservice/controller/EduSubjectController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/edu_service/src/main/java/com/lance/eduservice/entity/EduSubject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/edu_service/src/main/java/com/lance/eduservice/mapper/EduSubjectMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/edu_service/src/main/java/com/lance/eduservice/mapper/xml/EduSubjectMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/edu_service/src/main/java/com/lance/eduservice/service/EduSubjectService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/edu_service/src/main/java/com/lance/eduservice/service/impl/EduSubjectServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/VueSpace/lernado-admin-project/src/views/edu/teacher/form.vue" beforeDir="false" afterPath="$PROJECT_DIR$/VueSpace/lernado-admin-project/src/views/edu/teacher/form.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/edu_service/edu_service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/edu_service/edu_service.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/edu_service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/edu_service/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/edu_service/src/main/java/com/lance/eduservice/controller/FileUploadController.java" beforeDir="false" afterPath="$PROJECT_DIR$/edu_service/src/main/java/com/lance/eduservice/controller/FileUploadController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/edu_service/src/main/java/com/lance/eduservice/service/EduTeacherService.java" beforeDir="false" afterPath="$PROJECT_DIR$/edu_service/src/main/java/com/lance/eduservice/service/EduTeacherService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/edu_service/src/main/java/com/lance/eduservice/service/impl/EduTeacherServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/edu_service/src/main/java/com/lance/eduservice/service/impl/EduTeacherServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/edu_service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/edu_service/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/edu_service/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/edu_service/src/test/java/com/lance/test/CodeGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/edu_service/src/test/java/com/lance/test/CodeGenerator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/edu_service/target/classes/com/lance/eduservice/controller/FileUploadController.class" beforeDir="false" afterPath="$PROJECT_DIR$/edu_service/target/classes/com/lance/eduservice/controller/FileUploadController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/edu_service/target/classes/com/lance/eduservice/service/EduTeacherService.class" beforeDir="false" afterPath="$PROJECT_DIR$/edu_service/target/classes/com/lance/eduservice/service/EduTeacherService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/edu_service/target/classes/com/lance/eduservice/service/impl/EduTeacherServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/edu_service/target/classes/com/lance/eduservice/service/impl/EduTeacherServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/edu_service/target/test-classes/com/lance/test/CodeGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/edu_service/target/test-classes/com/lance/test/CodeGenerator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -87,7 +111,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2482353" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -165,7 +189,8 @@
       <workItem from="1574727290845" duration="14697000" />
       <workItem from="1574756506656" duration="3537000" />
       <workItem from="1574761796489" duration="704000" />
-      <workItem from="1574762719981" duration="1275000" />
+      <workItem from="1574762719981" duration="3579000" />
+      <workItem from="1574816061405" duration="11871000" />
     </task>
     <task id="LOCAL-00001" summary="增加了讲师管理模块">
       <created>1574521249529</created>
@@ -202,7 +227,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574756421873</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="OSS update">
+      <created>1574764209855</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1574764209855</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

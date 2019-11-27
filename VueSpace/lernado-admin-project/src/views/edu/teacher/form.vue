@@ -60,7 +60,10 @@
 </template>
 
 <script>
+// 引入组件
 import teacher from '@/api/teacher'
+import ImageCropper from '@/components/ImageCropper'
+import PanThumb from '@/components/PanThumb'
 
 const defaultForm = {
     name: '',
@@ -72,9 +75,14 @@ const defaultForm = {
 }
 
 export default {
+    // 声明额外组件,必不可少
+    components: {ImageCropper,PanThumb},
     data() {
         return {
             // 设置teacher对象的内容
+            BASE_API: process.env.BASE_API, // 接口API地址
+            imagecropperShow: false,
+            imagecropperKey: 0,
             teacher: defaultForm
         }
     },
@@ -88,6 +96,17 @@ export default {
         this.init()
     },
     methods: {
+        cropSuccess(data) {
+            //获取上传的图片并显示出来
+            this.imagecropperShow = false
+            this.teacher.avatar = data.imgurl
+            this.imagecropperKey = this.imagecropperKey+1
+        },
+        close() {
+            // 关闭弹框
+            this.imagecropperShow = false
+            this.imagecropperKey = this.imagecropperKey+1
+        },
         init() {
             // 在页面加载之前,判断路由中是否有id值,
             //有则为修改,调用方法根据id查询
