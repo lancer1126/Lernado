@@ -67,14 +67,45 @@ export const constantRouterMap = [
   },
 
   {
-    path: '/form',
+    path: '/subject',
     component: Layout,
+    redirect: '/subject/list',
+    name: '分类管理',
+    meta: {title: '分类管理', icon: 'example'},
     children: [
       {
-        path: 'index',
-        name: 'Form',
-        component: () => import('@/views/form/index'),
-        meta: { title: 'Form', icon: 'form' }
+        path: 'list',
+        name: '分类列表',
+        component: () => import('@/views/edu/subject/index'),
+        meta: { title: '分类列表', icon: 'table' }
+      },
+      {
+        path: 'import',
+        name: '导入分类',
+        component: () => import('@/views/edu/subject/import'),
+        meta: {title: '导入分类', icon: 'tree'}
+      }
+    ]
+  },
+
+  {
+    path: '/course',
+    component: Layout,
+    redirect: '/course/list',
+    name: '课程管理',
+    meta: {title: '课程管理', icon: 'example'},
+    children: [
+      {
+        path: 'list',
+        name: '课程列表',
+        component: () => import('@/views/edu/subject/index'),
+        meta: { title: '课程列表', icon: 'table' }
+      },
+      {
+        path: 'info',
+        name: '发布课程',
+        component: () => import('@/views/edu/course/info'),
+        meta: {title: '发布课程', icon: 'tree'}
       }
     ]
   },

@@ -1,7 +1,7 @@
 <template>
-    <div class="app-container">
-        讲师列表
-        <!--查询表单-->
+  <div class="app-container">
+    讲师列表
+    <!--查询表单-->
     <el-form :inline="true" class="demo-form-inline">
       <el-form-item>
         <el-input v-model="searchObj.name" placeholder="讲师名"/>
@@ -69,7 +69,7 @@
       <el-table-column prop="gmtCreate" label="添加时间" width="160"/>
 
       <el-table-column prop="sort" label="排序" width="60" />
-
+   
       <el-table-column label="操作" width="200" align="center">
         <template slot-scope="scope">
           <router-link :to="'/teacher/edit/'+scope.row.id">
@@ -90,7 +90,7 @@
       layout="total, prev, pager, next, jumper"
       @current-change="getListTeacher"
     />
-    </div>
+  </div>
 </template>
 
 <script>
