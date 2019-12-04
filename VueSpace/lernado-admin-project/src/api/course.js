@@ -13,5 +13,18 @@ export default {
             url: '/eduservice/teacher',
             method: 'get'
         })
+    },
+    getCourseInfo(id) {
+        return request({
+            url: '/eduservice/course/getCourseInfo/'+id,
+            method: 'get'
+        })
+    },
+    updateCourseInfo(id,courseInfo) {
+        return request({
+            url: '/eduservice/course/updateCourseInfo/'+id,
+            method: 'post',
+            data: courseInfo
+        })
     }
 }

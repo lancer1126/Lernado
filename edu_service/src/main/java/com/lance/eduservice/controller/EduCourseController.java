@@ -31,5 +31,24 @@ public class EduCourseController
         String courseId = eduCourseService.insertCourseInfo(courseInfoForm);
         return R.ok().data("courseId",courseId);
     }
+
+    // 通过课程的id获取课程的信息
+    @GetMapping("getCourseInfo/{id}")
+    public R getCourseInfo(@PathVariable String id)
+    {
+        CourseInfoForm courseInfoForm = eduCourseService.getIdCourse(id);
+        return R.ok().data("courseInfoForm",courseInfoForm);
+    }
+
+    // 修改课程信息
+    @PostMapping("updateCourseInfo/{id}")
+    public R updateCourseInfo(@PathVariable String id,@RequestBody CourseInfoForm courseInfoForm)
+    {
+        Boolean flag = eduCourseService.updateCourse(courseInfoForm);
+        if(flag)
+            return R.ok();
+        else
+            return R.error();
+    }
 }
 

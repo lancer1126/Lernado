@@ -2,26 +2,38 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c4bed01b-08fa-4dec-a7d0-3b9d03b1dadf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/VueSpace/lernado-admin-project/src/views/edu/course/chapter.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VueSpace/lernado-admin-project/src/views/edu/course/publish.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VueSpace/lernado-admin-project/static/01.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/edu_service/src/main/java/com/lance/eduservice/entity/form/CourseInfoForm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/edu_service/target/classes/com/lance/eduservice/entity/form/CourseInfoForm.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VueSpace/lernado-admin-project/src/api/chapter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/edu_service/src/main/java/com/lance/eduservice/controller/EduChapterController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/edu_service/src/main/java/com/lance/eduservice/controller/EduVideoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/edu_service/src/main/java/com/lance/eduservice/entity/EduChapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/edu_service/src/main/java/com/lance/eduservice/entity/EduVideo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/edu_service/src/main/java/com/lance/eduservice/entity/dto/EduChapterDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/edu_service/src/main/java/com/lance/eduservice/entity/dto/EduVideoDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/edu_service/src/main/java/com/lance/eduservice/mapper/EduChapterMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/edu_service/src/main/java/com/lance/eduservice/mapper/EduVideoMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/edu_service/src/main/java/com/lance/eduservice/mapper/xml/EduChapterMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/edu_service/src/main/java/com/lance/eduservice/mapper/xml/EduVideoMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/edu_service/src/main/java/com/lance/eduservice/service/EduChapterService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/edu_service/src/main/java/com/lance/eduservice/service/EduVideoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/edu_service/src/main/java/com/lance/eduservice/service/impl/EduChapterServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/edu_service/src/main/java/com/lance/eduservice/service/impl/EduVideoServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/VueSpace/lernado-admin-project/src/api/course.js" beforeDir="false" afterPath="$PROJECT_DIR$/VueSpace/lernado-admin-project/src/api/course.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VueSpace/lernado-admin-project/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/VueSpace/lernado-admin-project/src/router/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VueSpace/lernado-admin-project/src/views/edu/course/chapter.vue" beforeDir="false" afterPath="$PROJECT_DIR$/VueSpace/lernado-admin-project/src/views/edu/course/chapter.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/VueSpace/lernado-admin-project/src/views/edu/course/info.vue" beforeDir="false" afterPath="$PROJECT_DIR$/VueSpace/lernado-admin-project/src/views/edu/course/info.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VueSpace/lernado-admin-project/src/views/edu/subject/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/VueSpace/lernado-admin-project/src/views/edu/subject/index.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/edu_service/src/main/java/com/lance/eduservice/controller/EduCourseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/edu_service/src/main/java/com/lance/eduservice/controller/EduCourseController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/edu_service/src/main/java/com/lance/eduservice/entity/EduCourse.java" beforeDir="false" afterPath="$PROJECT_DIR$/edu_service/src/main/java/com/lance/eduservice/entity/EduCourse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/edu_service/src/main/java/com/lance/eduservice/entity/EduCourseDescription.java" beforeDir="false" afterPath="$PROJECT_DIR$/edu_service/src/main/java/com/lance/eduservice/entity/EduCourseDescription.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/edu_service/src/main/java/com/lance/eduservice/entity/form/CourseInfoForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/edu_service/src/main/java/com/lance/eduservice/entity/form/CourseInfoForm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/edu_service/src/main/java/com/lance/eduservice/service/EduCourseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/edu_service/src/main/java/com/lance/eduservice/service/EduCourseService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/edu_service/src/main/java/com/lance/eduservice/service/impl/EduCourseServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/edu_service/src/main/java/com/lance/eduservice/service/impl/EduCourseServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/edu_service/src/test/java/com/lance/test/CodeGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/edu_service/src/test/java/com/lance/test/CodeGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/edu_service/target/classes/META-INF/edu_service.kotlin_module" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/edu_service/target/classes/com/lance/eduservice/controller/EduCourseController.class" beforeDir="false" afterPath="$PROJECT_DIR$/edu_service/target/classes/com/lance/eduservice/controller/EduCourseController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/edu_service/target/classes/com/lance/eduservice/entity/EduCourse.class" beforeDir="false" afterPath="$PROJECT_DIR$/edu_service/target/classes/com/lance/eduservice/entity/EduCourse.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/edu_service/target/classes/com/lance/eduservice/entity/EduCourseDescription.class" beforeDir="false" afterPath="$PROJECT_DIR$/edu_service/target/classes/com/lance/eduservice/entity/EduCourseDescription.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/edu_service/target/classes/com/lance/eduservice/entity/form/CourseInfoForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/edu_service/target/classes/com/lance/eduservice/entity/form/CourseInfoForm.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/edu_service/target/classes/com/lance/eduservice/service/EduCourseService.class" beforeDir="false" afterPath="$PROJECT_DIR$/edu_service/target/classes/com/lance/eduservice/service/EduCourseService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/edu_service/target/classes/com/lance/eduservice/service/impl/EduCourseServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/edu_service/target/classes/com/lance/eduservice/service/impl/EduCourseServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/edu_service/target/test-classes/com/lance/test/CodeGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/edu_service/target/test-classes/com/lance/test/CodeGenerator.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +108,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/edu_service/src/test/java/com/lance/test" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/edu_service/src/main/java/com/lance/eduservice/entity" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -107,6 +119,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\MyCode\JavaSpace\Lernado Project\Lernado\edu_service\src\main\java\com\lance\eduservice\entity" />
       <recent name="D:\MyCode\JavaSpace\Lernado Project\Lernado\edu_service\src\test\java\com\lance\test" />
     </key>
   </component>
@@ -186,7 +199,9 @@
       <workItem from="1575012501839" duration="684000" />
       <workItem from="1575013497029" duration="7066000" />
       <workItem from="1575026068788" duration="5547000" />
-      <workItem from="1575074931265" duration="6522000" />
+      <workItem from="1575074931265" duration="14493000" />
+      <workItem from="1575333554945" duration="12536000" />
+      <workItem from="1575418218362" duration="6478000" />
     </task>
     <task id="LOCAL-00001" summary="增加了讲师管理模块">
       <created>1574521249529</created>
@@ -258,45 +273,53 @@
     <option name="LAST_COMMIT_MESSAGE" value="OSS update" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="765" y="249" key="#com.intellij.ide.util.MemberChooser" timestamp="1575034549709">
+    <state x="765" y="249" key="#com.intellij.ide.util.MemberChooser" timestamp="1575425004907">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="765" y="249" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1575034549709" />
-    <state width="1921" height="211" key="GridCell.Tab.0.bottom" timestamp="1575090267462">
+    <state x="765" y="249" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1575425004907" />
+    <state x="690" y="286" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1575344268192">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1921" height="211" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1575090267462" />
-    <state width="1921" height="211" key="GridCell.Tab.0.center" timestamp="1575090267462">
+    <state x="690" y="286" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1575344268192" />
+    <state width="1921" height="211" key="GridCell.Tab.0.bottom" timestamp="1575442449171">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1921" height="211" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1575090267462" />
-    <state width="1921" height="211" key="GridCell.Tab.0.left" timestamp="1575090267462">
+    <state width="1921" height="211" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1575442449171" />
+    <state width="1921" height="211" key="GridCell.Tab.0.center" timestamp="1575442449171">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1921" height="211" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1575090267462" />
-    <state width="1921" height="211" key="GridCell.Tab.0.right" timestamp="1575090267462">
+    <state width="1921" height="211" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1575442449171" />
+    <state width="1921" height="211" key="GridCell.Tab.0.left" timestamp="1575442449171">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1921" height="211" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1575090267462" />
-    <state width="1921" height="211" key="GridCell.Tab.1.bottom" timestamp="1575090267463">
+    <state width="1921" height="211" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1575442449171" />
+    <state width="1921" height="211" key="GridCell.Tab.0.right" timestamp="1575442449171">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1921" height="211" key="GridCell.Tab.1.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1575090267463" />
-    <state width="1921" height="211" key="GridCell.Tab.1.center" timestamp="1575090267463">
+    <state width="1921" height="211" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1575442449171" />
+    <state width="1921" height="211" key="GridCell.Tab.1.bottom" timestamp="1575442449172">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1921" height="211" key="GridCell.Tab.1.center/0.0.1920.1080@0.0.1920.1080" timestamp="1575090267463" />
-    <state width="1921" height="211" key="GridCell.Tab.1.left" timestamp="1575090267462">
+    <state width="1921" height="211" key="GridCell.Tab.1.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1575442449172" />
+    <state width="1921" height="211" key="GridCell.Tab.1.center" timestamp="1575442449172">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1921" height="211" key="GridCell.Tab.1.left/0.0.1920.1080@0.0.1920.1080" timestamp="1575090267462" />
-    <state width="1921" height="211" key="GridCell.Tab.1.right" timestamp="1575090267463">
+    <state width="1921" height="211" key="GridCell.Tab.1.center/0.0.1920.1080@0.0.1920.1080" timestamp="1575442449172" />
+    <state width="1921" height="211" key="GridCell.Tab.1.left" timestamp="1575442449172">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1921" height="211" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1575090267463" />
-    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1575035588292">
+    <state width="1921" height="211" key="GridCell.Tab.1.left/0.0.1920.1080@0.0.1920.1080" timestamp="1575442449172" />
+    <state width="1921" height="211" key="GridCell.Tab.1.right" timestamp="1575442449172">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1575035588292" />
+    <state width="1921" height="211" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1575442449172" />
+    <state x="92" y="92" width="1736" height="896" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1575369012957">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="92" y="92" width="1736" height="896" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1575369012957" />
+    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1575105699422">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1575105699422" />
   </component>
 </project>

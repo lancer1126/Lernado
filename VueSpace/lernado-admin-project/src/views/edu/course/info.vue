@@ -117,19 +117,20 @@ export default {
     },
     created() {
         this.init()
-        //页面一加载就获取所有的讲师到下拉列表中
-        this.getTeacherList()
-        this.getLevelAll()
-        // this.subjectLevelOneChanged()
+
     },
     methods: {
         init() {
-            // 当点击返回上一步时id回显
+            // 若当前路由中存在id值则说明是由下一步返回而来,需要数据回显
             if(this.$route.params && this.$route.params.id) {
                 // 数据回显
                 const id = this.$route.params.id
+                this.getIdCourse(id)
             } else { // 若路由中没有id值则将表单清空
                 this.courseInfo = {...defaultForm}
+                //页面一加载就获取所有的讲师到下拉列表中
+                this.getTeacherList()
+                this.getLevelAll()
             }
         },
 
@@ -170,11 +171,22 @@ export default {
                 })
             })
         },
-
-        updateCourse() {
-
+        // 当点击回到上一步时,数据回显
+        updateCourse(id) {
+           course.updateCourseInfo(this.courseInfo.id,this.courseInfo)
+           .then(response => {
+               this.$message({
+                    type: 'success',
+                    message: '添加课程信息成功!'
+                })
+                this.$router.push({path: '/course'})
+           }).catch(response => {
+               this.$message({
+                    type: 'error',
+                    message: '添加课程信息失败!'
+                })
+           })
         },
-
         getLevelAll() {
             subject.getAllSubjectList()
             .then(response => {
@@ -211,6 +223,30 @@ export default {
                 this.$message.error('上传头像图片大小不能超过 2MB!')
             }
             return isJPG && isLt2M
+        },
+        // 在点击返回上一步时数据回显
+        getIdCourse(id) {
+            course.getCourseInfo(id)
+            .then(response => {
+                this.courseInfo = response.data.courseInfoForm
+                //1 查询所有的一级分类
+                    subject.getAllSubjectList()
+                        .then(response => {
+                            this.oneLevelSubjectList = response.data.OneSubjectDto
+                            //2 遍历一级分类集合
+                            for(var i=0;i<this.oneLevelSubjectList.length;i++) {
+                                //3 获取每个一级分类
+                                var levelOne = this.oneLevelSubjectList[i]
+                                //4 判断：每个一级分类id和课程所属一级分类id是否相同
+                                if(levelOne.id === this.courseInfo.subjectParentId) {
+                                    //5 获取这个一级分类里面的所有的二级分类
+                                    this.twoLevelSubjectList = levelOne.children
+                                }
+                            }
+                    })
+                    //调用获取所有的讲师的方法
+                    this.getTeacherList()
+            })
         }
     }
 }

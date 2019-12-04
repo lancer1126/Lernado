@@ -21,7 +21,8 @@ import org.springframework.transaction.annotation.Transactional;
  * @since 2019-11-29
  */
 @Service
-public class EduCourseServiceImpl extends ServiceImpl<EduCourseMapper, EduCourse> implements EduCourseService {
+public class EduCourseServiceImpl extends ServiceImpl<EduCourseMapper, EduCourse> implements EduCourseService
+{
 
     @Autowired
     EduCourseDescriptionService eduCourseDescriptionService;
@@ -54,5 +55,38 @@ public class EduCourseServiceImpl extends ServiceImpl<EduCourseMapper, EduCourse
             return courseId;
         else
             return "数据传输错误";
+    }
+
+    // 通过课程的id获取课程的信息
+    @Override
+    public CourseInfoForm getIdCourse(String id)
+    {
+        // 获取课程基本信息
+        EduCourse eduCourse = baseMapper.selectById(id);
+        CourseInfoForm courseInfoForm = new CourseInfoForm();
+        BeanUtils.copyProperties(eduCourse,courseInfoForm);
+
+        // 获取课程描述信息
+        EduCourseDescription eduCourseDescription = eduCourseDescriptionService.getById(id);
+        String description = eduCourseDescription.getDescription();
+        courseInfoForm.setDescription(description);
+        return courseInfoForm;
+    }
+
+    // 更改课程信息
+    @Override
+    public Boolean updateCourse(CourseInfoForm courseInfoForm)
+    {
+        //修改基本信息
+        EduCourse eduCourse = new EduCourse();
+        BeanUtils.copyProperties(courseInfoForm,eduCourse);
+        baseMapper.updateById(eduCourse);
+
+        // 修改课程描述信息
+        EduCourseDescription eduCourseDescription = new EduCourseDescription();
+        eduCourseDescription.setId(courseInfoForm.getId());
+        eduCourseDescription.setDescription(courseInfoForm.getDescription());
+
+        return eduCourseDescriptionService.updateById(eduCourseDescription);
     }
 }
