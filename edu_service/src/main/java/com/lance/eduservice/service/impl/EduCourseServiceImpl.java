@@ -2,6 +2,7 @@ package com.lance.eduservice.service.impl;
 
 import com.lance.eduservice.entity.EduCourse;
 import com.lance.eduservice.entity.EduCourseDescription;
+import com.lance.eduservice.entity.dto.CourseInfoDto;
 import com.lance.eduservice.entity.form.CourseInfoForm;
 import com.lance.eduservice.mapper.EduCourseMapper;
 import com.lance.eduservice.service.EduCourseDescriptionService;
@@ -88,5 +89,11 @@ public class EduCourseServiceImpl extends ServiceImpl<EduCourseMapper, EduCourse
         eduCourseDescription.setDescription(courseInfoForm.getDescription());
 
         return eduCourseDescriptionService.updateById(eduCourseDescription);
+    }
+
+    @Override
+    public CourseInfoDto getCourseInfoAll(String courseId)
+    {
+        return null;
     }
 }

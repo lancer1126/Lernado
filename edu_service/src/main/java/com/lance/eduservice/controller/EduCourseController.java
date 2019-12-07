@@ -2,6 +2,7 @@ package com.lance.eduservice.controller;
 
 
 import com.lance.common.R;
+import com.lance.eduservice.entity.dto.CourseInfoDto;
 import com.lance.eduservice.entity.form.CourseInfoForm;
 import com.lance.eduservice.service.EduCourseService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -49,6 +50,14 @@ public class EduCourseController
             return R.ok();
         else
             return R.error();
+    }
+
+    // 获取课程的所有信息
+    @GetMapping("getAllCourseInfo/{courseId}")
+    public R getAllCourseInfo(@PathVariable String courseId)
+    {
+        CourseInfoDto courseInfoDto = eduCourseService.getCourseInfoAll(courseId);
+        return R.ok().data("courseInfo",courseInfoDto);
     }
 }
 

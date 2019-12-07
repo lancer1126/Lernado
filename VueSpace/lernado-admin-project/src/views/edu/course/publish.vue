@@ -24,15 +24,20 @@
 export default {
     data() {
         return {
-            
+            id: ''
         }
     },
     created() {
-
+        this.init()
     },
     methods: {
+        init() {
+            if(this.$route.params && this.$route.params.id) {
+                this.id = this.$route.params.id
+            }
+        },
         previous() {
-            this.$router.push({path:'/course/chapter/1'})
+            this.$router.push({path:'/course/chapter/'+this.id})
         }
     }
 }

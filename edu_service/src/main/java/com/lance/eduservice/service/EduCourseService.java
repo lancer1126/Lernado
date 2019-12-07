@@ -2,6 +2,7 @@ package com.lance.eduservice.service;
 
 import com.lance.eduservice.entity.EduCourse;
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.lance.eduservice.entity.dto.CourseInfoDto;
 import com.lance.eduservice.entity.form.CourseInfoForm;
 
 /**
@@ -19,4 +20,6 @@ public interface EduCourseService extends IService<EduCourse> {
     CourseInfoForm getIdCourse(String id);
 
     Boolean updateCourse(CourseInfoForm courseInfoForm);
+
+    CourseInfoDto getCourseInfoAll(String courseId);
 }
