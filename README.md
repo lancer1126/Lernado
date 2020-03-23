@@ -1,13 +1,13 @@
 # Lernado
 
 一个初步的在线学习网站的管理后台，后端主要使用SpringBoot+MybatisPlus实现，前端主要使用Vue，是一个学习项目。
-包括讲师管理的前端与后端，课程搜索与课程发布,添加课程大纲等.
+包括教师管理的前端与后端，课程搜索与课程发布,添加课程大纲等.
 
 ### 整体效果
-**讲师管理界面**  
+**教师管理界面**  
 [![讲师列表](https://s2.ax1x.com/2019/11/26/Mz2K6H.md.png)](https://imgchr.com/i/Mz2K6H)
 
-**添加讲师界面**  
+**添加教师界面**  
 [![QtuqUO.md.png](https://s2.ax1x.com/2019/12/07/QtuqUO.md.png)](https://imgse.com/i/QtuqUO)
 
 **分类管理界面**  
